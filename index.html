@@ -4,26 +4,71 @@
     <meta charset="utf-8"/>
     <title>Todos</title>
 </head>
+
 <body>
-    <button aria-label="Отметить все как выполненные"></button>
-    <input placeholder="Добавить" aria-label="Поле добавления todo"/>
+<div class="todos-header">
+    <h1 class="todos-title">Todos</h1>
+</div>
 
-    <input value="Узнать про HTML"/>
-    <input type="checkbox" checked="checked" aria-label="Пометить как невыполненное"/>
-    <button>удалить</button>
+<div class="todos-main">
+    <div class="todo-add">
+        <button class="todo-add_select-all"
+                aria-label="Отметить все как выполненные">
+        </button>
 
-    <input value="Написать css"/>
-    <input type="checkbox" aria-label="Пометить как невыполненное"/>
-    <button>удалить</button>
-
-    <div aria-label="Количество не сделанных todo">2 todo</div>
-
-    <div aria-label="Фильтры">
-        <a href="#" aria-label="Фильтр: показать все" role="button">Показать все</a>
-        <a href="#" aria-label="Фильтр: показать невыполненные" role="button">Показать невыполненные</a>
-        <a href="#" aria-label="Фильтр: показать выполненные" role="button">Показать выполненные</a>
+        <input class="todo-add_input" placeholder="Добавить"
+               aria-label="Поле добавления todo"/>
     </div>
 
-    <button>удалить все выполненные</button>
+    <div class="todos-list">
+        <div class="todo-item __ready">
+            <textarea class="todo-item_text">
+                Запилить дико моднейший HTML, например
+            </textarea>
+
+            <input type="checkbox" checked="checked"
+                   class="todo-item_ready-mark" aria-label="Пометить как невыполненное"/>
+            <button class="todo-item_remove" aria-label="Удалить todo"></button>
+        </div>
+
+        <div class="todo-item">
+            <textarea class="todo-item_text">
+                Написать css
+            </textarea>
+
+            <input type="checkbox" checked="checked"
+                   class="todo-item_ready-mark" aria-label="Пометить как невыполненное"/>
+            <button class="todo-item_remove" aria-label="Удалить todo"></button>
+        </div>
+    </div>
+
+    <div class="todos-actions-bar">
+        <div class="todos-actions-bar_counter"
+             aria-label="Количество не сделанных todo">
+            2 todo
+        </div>
+
+        <div class="todos-filters">
+            <button class="todos-filter __active" data-filter="all"
+                    aria-label="Фильтр: показать все">
+                Все
+            </button>
+
+            <button class="todos-filter __active" data-filter="unready"
+                    aria-label="Фильтр: показать невыполненные">
+                Невыполненные
+            </button>
+
+            <button class="todos-filter" data-filter="ready"
+                    aria-label="Фильтр: показать невыполненные">
+                Выполненные
+            </button>
+        </div>
+
+        <button class="todos-actions-bar_clear-completed">
+            Удалить завершённые
+        </button>
+    </div>
+</div>
 </body>
 </html>
