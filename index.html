@@ -1,44 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-
     <meta charset="utf-8"/>
-
-    <title>This is title</title>
-
+    <title>Todos</title>
 </head>
 <body>
+    <button aria-label="Отметить все как выполненные"></button>
+    <input placeholder="Добавить" aria-label="Поле добавления todo"/>
 
-<header class="header">
-    <div id="headerInner">
+    <input value="Узнать про HTML"/>
+    <input type="checkbox" checked="checked" aria-label="Пометить как невыполненное"/>
+    <button>удалить</button>
 
+    <input value="Написать css"/>
+    <input type="checkbox" aria-label="Пометить как невыполненное"/>
+    <button>удалить</button>
+
+    <div aria-label="Количество не сделанных todo">2 todo</div>
+
+    <div aria-label="Фильтры">
+        <a href="#" aria-label="Фильтр: показать все" role="button">Показать все</a>
+        <a href="#" aria-label="Фильтр: показать невыполненные" role="button">Показать невыполненные</a>
+        <a href="#" aria-label="Фильтр: показать выполненные" role="button">Показать выполненные</a>
     </div>
-</header>
 
-
-<section id="wrapper">
-    <div id="middle">
-        <div id="content">
-            <div id="colLeft">
-                Hello world
-            </div>
-
-            <aside id="colRight">
-
-            </aside>
-
-        </div>
-    </div>
-</section>
-
-
-<footer id="footer">
-    <div id="footerInner">
-
-    </div>
-</footer>
-
+    <button>удалить все выполненные</button>
 </body>
 </html>
