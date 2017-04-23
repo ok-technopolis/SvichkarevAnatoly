@@ -10,6 +10,7 @@ body {
     color: #ebd9d9;
     font-family: "Helvetica Neue", Arial, sans-serif;
     font-weight: 100;
+    font-size: 80px;
 }
 
 .todos-main {
@@ -40,4 +41,29 @@ body {
     z-index: 0;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
     position: relative;
+}
+
+.todo-add {
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #E3E3FF;
+}
+
+.todo-add_select-all {
+    margin-left: 15px;
+    background: url("images/select-all.png");
+    height: 12px;
+    width: 24px;
+    border: none;
+    cursor: pointer;
+}
+
+.todo-add_input {
+    font-size: 18px;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    margin-left: 10px;
+    color: #a9a9a9;
+    border: none;
+    width: 430px;
+    outline: none;
 }
