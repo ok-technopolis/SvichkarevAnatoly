@@ -23,22 +23,27 @@
 
     <div class="todos-list">
         <div class="todo-item __ready">
+            <div class="todo-item_ready-mark">
+                <input type="checkbox" checked="checked"
+                       class="todo-item_ready-mark_target" aria-label="Пометить как невыполненное"/>
+                <div class="todo-item_ready-mark_visual"></div>
+            </div>
+
             <textarea class="todo-item_text">
                 Запилить дико моднейший HTML, например
             </textarea>
 
-            <input type="checkbox" checked="checked"
-                   class="todo-item_ready-mark" aria-label="Пометить как невыполненное"/>
             <button class="todo-item_remove" aria-label="Удалить todo"></button>
         </div>
 
         <div class="todo-item">
+            <input type="checkbox" checked="checked"
+                   class="todo-item_ready-mark" aria-label="Пометить как невыполненное"/>
+
             <textarea class="todo-item_text">
                 Написать css
             </textarea>
 
-            <input type="checkbox" checked="checked"
-                   class="todo-item_ready-mark" aria-label="Пометить как невыполненное"/>
             <button class="todo-item_remove" aria-label="Удалить todo"></button>
         </div>
     </div>
