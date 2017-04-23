@@ -21,3 +21,23 @@ body {
     z-index: 2;
     position: relative;
 }
+
+.first-stage {
+    width: 495px;
+    height: 6px;
+    background-color: #ffffff;
+    margin: 40px auto;
+    z-index: 1;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.second-stage {
+    width: 490px;
+    height: 6px;
+    background-color: #ffffff;
+    margin: -40px auto;
+    z-index: 0;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+    position: relative;
+}
